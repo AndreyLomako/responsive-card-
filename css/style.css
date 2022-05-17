@@ -1,0 +1,79 @@
+@import url(../css/reset.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900);
+.wrapper{
+    overflow: hidden;
+    max-width: 100%;
+   
+}
+body{
+    font-family: "Lato", sans-serif;
+    background-color: rgb(182, 178, 178);
+}
+.card__container{
+   max-width: 1140px;
+   margin: 0 auto; 
+   padding: 10px 15px;
+}
+.card__items{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin: 0 -15px;
+}
+.card__item{
+    padding: 0 15px;
+    flex: 1 0 33.333%;
+    min-width: 280px;
+    
+}
+.item-card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.item-card__picture{
+    padding: 0 0 74.428% 0;
+}
+._ibg{
+    position: relative;
+}
+._ibg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.item-card__body{
+    padding: 10px;
+    background-color: rgb(223, 219, 219);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.item-card__body *:not(:last-child){
+    margin-bottom: 15px;
+}
+.item-card__title{
+    font-size: 36px;
+    color: rgb(16, 17, 17);
+    font-weight: 700;
+}
+.item-card__text{
+    color: rgb(11, 12, 12);
+    line-height: 1.5;
+    flex: 1 1 auto;
+}
+.item-card__button{
+    display: block;
+    background-color: green;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+    font-weight: 700;
+}
+.item-card__button:hover{
+    background-color: rgb(6, 167, 6); 
+}
